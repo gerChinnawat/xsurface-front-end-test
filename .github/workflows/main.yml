@@ -33,7 +33,8 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v6
       - name: Install dependencies
-        run: products-demo/npm ci
+        run: cd products-demo
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Setup Pages
